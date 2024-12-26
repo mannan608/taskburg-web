@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+   <!-- set your title -->
+   <title> Task Burg Web</title>
+
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- replace favicon path or source here -->
+   <link rel="icon" href="assets/images/brand/favicon.ico">
+
+   <!-- bootstrap and font-awesome cdn link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" />
+   <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+   <link rel="stylesheet" href="../assets/css/master.css">
+   <link rel="stylesheet" href="../assets/css/style.css">
+   <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+<body>
+   <div class="app-wrapper">
+      <div class="navbar-wrapper">
+         <div class="container-fluid h-100">
+            <nav class="navbar h-100">
+               <div class="menuContainer d-flex align-items-center gap-5">
+                  <div class="navbar-brand">
+                     <div class="mobile-nav-toggler">
+                        <img src="../assets/images/icon/hamburger.svg" alt="" class="w-auto h-auto">
+                     </div>
+                     <div class="brandlogo">
+                        <img src="../assets/images/brand/logo.svg" alt="" class="w-auto h-auto">
+                     </div>
+                  </div>
+                  <div class="nav-menu ps-5">
+                     <ul class="navbar-nav" id="navbar-nav">
+                        <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="#">
+                              Abou Us
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link " aria-current="page" href="#">
+                              FAQs
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" aria-current="page" href="#">
+                              Articles
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="profileContainer d-flex gap-2">
+                  <a href="login.html" class="btn btn-link btn-md d-flex align-items-center justify-content-center">Log
+                     in</a>
+                  <a href="register.html"
+                     class="btn btn-primary btn-md d-flex align-items-center justify-content-center">Register</a>
+                  <!-- <div class="profile position-relative desktop" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                     data-bs-title="Profile">
+                     <img src="../assets/images/user.png" alt="" class="profile-btn  dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                     <div class="dropdown-menu" onclick="event.stopPropagation()">
+                        <ul class="d-flex flex-column gap-3">
+                           <li class="nav-item">
+                              <a href="user_profile.html" class="nav-link">
+                                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="my_acc" cx="4" cy="4" r="4"
+                                       transform="matrix(-1 0 0 1 16.3652 3.95312)" stroke="#737373"
+                                       stroke-width="1.5">
+                                    </circle>
+                                    <path class="my_acc"
+                                       d="M5.36523 17.8878C5.36523 17.0274 5.90609 16.26 6.71633 15.9706V15.9706C10.3693 14.666 14.3612 14.666 18.0141 15.9706V15.9706C18.8244 16.26 19.3652 17.0274 19.3652 17.8878V19.2033C19.3652 20.3907 18.3135 21.3029 17.138 21.135L16.1836 20.9986C13.6509 20.6368 11.0796 20.6368 8.54686 20.9986L7.59244 21.135C6.41694 21.3029 5.36523 20.3907 5.36523 19.2033V17.8878Z"
+                                       stroke="#737373" stroke-width="1.5"></path>
+                                 </svg>
+                                 <span class="title">Profile</span>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="setting.html" class="nav-link">
+                                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="cng-pass" x="4" y="9.95312" width="16" height="12" rx="4"
+                                       stroke="#737373" stroke-width="1.5"></rect>
+                                    <path class="cng-pass" d="M12 16.9531L12 14.9531" stroke="#737373"
+                                       stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path class="cng-pass"
+                                       d="M16 9.95313V7.95313C16 5.74399 14.2091 3.95312 12 3.95312V3.95312C9.79086 3.95312 8 5.74399 8 7.95312L8 9.95313"
+                                       stroke="#737373" stroke-width="1.5"></path>
+                                 </svg>
+                                 <span class="title">Reset Password</span>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="setting.html" class="nav-link">
+                                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="logout"
+                                       d="M16.3652 16.9531V18.9531C16.3652 21.1623 14.5744 22.9531 12.3652 22.9531H7.36523C5.1561 22.9531 3.36523 21.1623 3.36523 18.9531V6.95313C3.36523 4.74399 5.1561 2.95312 7.36523 2.95312H12.3652C14.5744 2.95312 16.3652 4.74399 16.3652 6.95312V8.95312"
+                                       stroke="#737373" stroke-width="1.5" stroke-linecap="round"></path>
+                                    <path class="logout"
+                                       d="M19.3652 15.9531L21.6581 13.6602C22.0487 13.2697 22.0487 12.6365 21.6581 12.246L19.3652 9.95313"
+                                       stroke="#737373" stroke-width="1.5" stroke-linecap="round"></path>
+                                    <path class="logout" d="M21.3652 12.9531L9.36523 12.9531" stroke="#737373"
+                                       stroke-width="1.5" stroke-linecap="round"></path>
+                                 </svg>
+                                 <span class="title">Log Out</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div> -->
+                  <!-- <div class="profile position-relative mobile" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                     data-bs-title="Profile">
+                     <img src="../assets/images/user.png" alt="" class="profile-btn">
+
+                  </div> -->
+               </div>
+
+            </nav>
+         </div>
+      </div>
+
+      <div class="mobile-menu">
+         <div class="menu-backdrop"></div>
+         <nav class="mobile-menu-nav">
+            <div class="mobile-brand d-flex align-items-center justify-content-between">
+               <div class="logo">
+                  <a href="index.html"> <img src="../assets/images/brand/logo.svg" alt="" class="w-auto h-auto"></a>
+               </div>
+               <div class="close-btn ">
+                  <img src="../assets/images/icon/close.png" alt="">
+               </div>
+            </div>
+            <div class="divider"></div>
+            <div class="menu-outer">
+
+
+            </div>
+            <div class="language ">
+               EN
+            </div>
+         </nav>
+      </div>
+
+      <div class="main-content">
+
+         <!-- hero section -->
+         <div class="hero-wrapper">
+            <div class="container-fluid">
+               <div class="hero-content">
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <div class="content d-flex flex-column gap-2">
+                           <h6 class="font-18 d-flex align-items-center gap-2">Hey,Everyone <img
+                                 src="../assets/images/bey_icon.svg" alt="" class="w-auto h-auto"></h6>
+                           <h1 class="font-56">Unlock Opportunities
+                              with <span class="text-primary fw-600">Best platform for Micro jobs</span></h1>
+                           <p class="font-18 mt-2">Track connections in real time. See who your community being lead by
+                              and
+                              find
+                              the most active
+                              Track connections in real time. See who your community being lead by and find the most
+                              active
+                           </p>
+                           <div class="getStart mt-4">
+                              <a href="#"
+                                 class="btn btn-primary btn-md d-flex align-items-center justify-content-center">Get
+                                 Started</a>
+                           </div>
+                           <div class="sort-summary d-flex align-items-center justify-content-between gap-3">
+                              <div class="summary d-flex align-items-center gap-3">
+                                 <div class="summary-icon">
+                                    <img src="../assets/images/icon/member.svg" alt="" class="w-auto h-auto">
+                                 </div>
+                                 <div class="summary-content">
+                                    <h5 class="fw-600 text-primary">10000+</h5>
+                                    <p>Active members</p>
+                                 </div>
+                              </div>
+                              <div class="summary d-flex align-items-center gap-3">
+                                 <div class="summary-icon">
+                                    <img src="../assets/images/icon/task.svg" alt="" class="w-auto h-auto">
+                                 </div>
+                                 <div class="summary-content">
+                                    <h5 class="fw-600 text-primary">1650+</h5>
+                                    <p>Available Tasks</p>
+                                 </div>
+                              </div>
+                              <div class="summary d-flex align-items-center gap-3">
+                                 <div class="summary-icon">
+                                    <img src="../assets/images/icon/payment.svg" alt="" class="w-auto h-auto">
+                                 </div>
+                                 <div class="summary-content">
+                                    <h5 class="fw-600 text-primary">$2.5M+</h5>
+                                    <p>Payment Done</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="image">
+                           <img src="../assets/images/hero_img.svg" alt="" class="w-auto h-auto">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- hero section -->
+
+         <!-- we offer -->
+         <div class="offer-wrapper">
+            <div class="container-fluid">
+               <div class="offer-content">
+                  <div class="title mb-2">
+                     <h5 class="text-primary">We Offer</h5>
+                  </div>
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <div class="heading">
+                           <h1>A wide range of Tasks, <span class="text-primary fw-600">Simple & Profitable</span></h1>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 ps-5">
+                        <div class="sub-heading">
+                           <h6>Find the perfect task from millions of options, complete them at your own pace, and get
+                              rewarded for every effort you make. With a transparent payout system and endless task
+                              opportunities, your time and skills are always valued</h6>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="offer-lists mt-4">
+                     <div class="row">
+                        <div class="col-md-4">
+                           <div class="card">
+                              <div class="card-body d-flex flex-column gap-2">
+                                 <div class="icon mb-2">
+                                    <img src="../assets/images/icon/chosse_task.svg" alt="" class="w-auto h-auto">
+                                 </div>
+                                 <h4 class="fw-600">| Choose Task</h4>
+                                 <p>No logins or anything is needed. Directly connect with everyone with only one</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="card">
+                              <div class="card-body d-flex flex-column gap-2">
+                                 <div class="icon mb-2">
+                                    <img src="../assets/images/icon/done_task.svg" alt="" class="w-auto h-auto">
+                                 </div>
+                                 <h4 class="fw-600">| Complete Task</h4>
+                                 <p>No logins or anything is needed. Directly connect with everyone with only one</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="card">
+                              <div class="card-body d-flex flex-column gap-2">
+                                 <div class="icon mb-2">
+                                    <img src="../assets/images/icon/instant_payment.svg" alt="" class="w-auto h-auto">
+                                 </div>
+                                 <h4 class="fw-600">| Get Paid Instantly</h4>
+                                 <p>No logins or anything is needed. Directly connect with everyone with only one</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- we offer -->
+
+         <!-- overview section -->
+         <div class="overview-wrapper mt-120">
+            <div class="container-fluid">
+               <div class="overview-content">
+                  <div class="title mb-1">
+                     <h5 class="text-primary text-center">Overview</h5>
+                  </div>
+                  <div class="heading">
+                     <h1 class="text-center">Have A overview of our <span class="text-primary fw-600">Platform</span>
+                     </h1>
+                  </div>
+                  <div class="sub-heading mt-3">
+                     <h6 class="text-center">We understand the hussle of replacing the long used tools in your process.
+                        That’s why we
+                        integrate tools you use in your day-to-day work.
+                     </h6>
+                  </div>
+                  <div class="getStart mt-4 d-flex align-items-center justify-content-center">
+                     <a href="#" class="btn btn-primary btn-md d-flex align-items-center justify-content-center">Get
+                        Started</a>
+                  </div>
+               </div>
+               <div class="overview-slider">
+                  fhjdsghjh
+               </div>
+            </div>
+
+         </div>
+         <!-- overview section-->
+
+         <!-- category section -->
+         <div class="category-wrapper mt-120">
+            <div class="container-fluid">
+               <div class="category-content ">
+                  <div class="row align-items-center">
+                     <div class="col-sm-6">
+                        <div class="content ">
+                           <div class="title mb-2">
+                              <h6 class="text-white">Categories</h6>
+                           </div>
+                           <h1 class="text-white">Millions of Tasks, Endless Opportunities - <span
+                                 class="fw-600 text-primary">Start Earning Today!</span></h1>
+                           <p class="text-white mt-2">Designed with a simple, user-friendly interface, nTask is a 7-in-1
+                              project management tool
+                              that is ideal for both small and large teams. You can create multiple workspaces.</p>
+
+                           <div class="sort-summary mt-5 d-flex align-items-center justify-content-between gap-3">
+                              <div class="summary d-flex align-items-center gap-3">
+                                 <h1 class="text-white">20+</h1>
+                                 <div class="summary-content">
+                                    <p class="text-white">Task</p>
+                                    <p class="text-white">Categories</p>
+                                 </div>
+                              </div>
+                              <div class="summary d-flex align-items-center gap-3">
+                                 <h1 class="text-white">10570+</h1>
+                                 <div class="summary-content">
+                                    <p class="text-white">Available </p>
+                                    <p class="text-white">Task</p>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="image">
+                           <img src="../assets/images/category_image.svg" alt="" class="w-auto h-auto">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- category section -->
+
+         <div class="employee-wrapper mt-120">
+            <div class="container-fluid">
+               <div class="employee-content">
+                  <div class="row align-items-center">
+                     <div class="col-sm-6">
+                        <div class="content">
+                           <div class="title mb-2">
+                              <h6 class="text-primary">For Employers</h6>
+                           </div>
+                           <h1>Discover Global Workforce Connect with <span class="fw-600 text-primary">Millions of
+                                 Freelancers</span></h1>
+                           <p class="mt-3">Maximize productivity by tapping into a diverse pool of freelancers. Simply
+                              post your
+                              task, deposit funds, ensuring quality results every time</p>
+                           <div class="employee-tasks mt-5 d-flex flex-column gap-4">
+                              <div class="task d-flex gap-3">
+                                 <div class="task-icon">
+                                    <img src="../assets/images/icon/feedback_task.svg" alt="" class="w-auto h-auto">
+                                 </div>
+                                 <div class="task-content">
+                                    <h5>Country Specific Task </h5>
+                                    <p class="mt-2">Refine your task for the perfect freelancers by targeting specific
+                                       regions or
+                                       countries. Post tasks exclusively for freelancers in your chosen location.
+                                       Ensures making your tasks done more effective and tailored to your needs.</p>
+                                 </div>
+                              </div>
+                              <div class="task d-flex gap-3">
+                                 <div class="task-icon">
+                                    <img src="../assets/images/icon/feedback_task.svg" alt="" class="w-auto h-auto">
+                                 </div>
+                                 <div class="task-content">
+                                    <h5>Rating and Feedback </h5>
+                                    <p class="mt-2">Ensuring quality by providing detailed ratings and constructive
+                                       feedback for every completed task. Encourages high standards across the platform.
+                                    </p>
+                                 </div>
+                              </div>
+                              <div class="task d-flex gap-3">
+                                 <div class="task-icon">
+                                    <img src="../assets/images/icon/secure_payment.svg" alt="" class="w-auto h-auto">
+                                 </div>
+                                 <div class="task-content">
+                                    <h5>Secure Payments </h5>
+                                    <p class="mt-2">Deposit funds securely when posting a task, and release payments
+                                       only after the job is completed to your satisfaction. Our payment system ensures
+                                       transparent, safe, and hassle-free transactions</p>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="image">
+                           <img src="../assets/images/employee_img.svg" alt="" class="w-auto h-auto">
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+         <!-- category section -->
+         <!-- feature section -->
+         <div class="feature-wrapper mt-120">
+            <div class="container-fluid">
+               <div class="feature-content">
+                  <div class="title mb-1">
+                     <h5 class="text-primary text-center">Features</h5>
+                  </div>
+                  <div class="heading">
+                     <h1 class="text-center">Millions of Tasks, Limitless opportunities</span>
+                     </h1>
+                  </div>
+                  <div class="sub-heading mt-3">
+                     <h6 class="text-center">We understand the hussle of replacing the long used tools in your process.
+                        That’s why we integrate tools you use in your day-to-day work. </h6>
+                  </div>
+                  <div class="getStart mt-4 d-flex align-items-center justify-content-center">
+                     <a href="#" class="btn btn-primary btn-md d-flex align-items-center justify-content-center">Get
+                        Started</a>
+                  </div>
+
+                  <div class="image mt-4">
+                     <img src="../assets/images/feature_img.svg" alt="" class="w-auto h-auto">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- feature section -->
+
+
+         <!-- faq section -->
+         <div class="faq-wrapper mt-120">
+            <div class="container-fluid">
+               <div class="faq-content">
+                  <div class="heading">
+                     <h1 class="text-center">Frequently asked questions <span class="text-primary fw-600">(FAQs)</span>
+                     </h1>
+                  </div>
+                  <div class="sub-heading mt-3">
+                     <h6 class="text-center">The purpose of a FAQ is generally to provide information on frequent
+                        questions or concerns. however, the format is a useful means of organizing information, and text
+                     </h6>
+                  </div>
+
+                  <div class="accordion mt-5" id="accordionExample">
+                     <div class="row">
+                        <div class="col-sm-6">
+                           <div class="accordion-item">
+                              <h4 class="accordion-header">
+                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq_1" aria-expanded="true" aria-controls="faq_1">
+                                    What are the benefits for employers?
+                                 </button>
+                              </h4>
+                              <div id="faq_1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                 <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse perferendis
+                                       molestias obcaecati iusto fugit a porro suscipit, qui, ea quis similique nihil
+                                       expedita dolore nemo. Tempora nisi minus recusandae sint!</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-6">
+                           <div class="accordion-item">
+                              <h4 class="accordion-header">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq_2" aria-expanded="false" aria-controls="faq_2">
+                                    How long the employer’s job is pending?
+                                 </button>
+                              </h4>
+                              <div id="faq_2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                 <div class="accordion-body">
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta alias
+                                       adipisci aliquid, amet blanditiis corrupti! Quaerat praesentium quibusdam ea
+                                       veritatis provident veniam eos, natus aliquid. Sint nihil eaque numquam ullam?
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-6">
+                           <div class="accordion-item">
+                              <h4 class="accordion-header">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq_3" aria-expanded="false" aria-controls="faq_3">
+                                    Accordion Item #3
+                                 </button>
+                              </h4>
+                              <div id="faq_3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                 <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, non.
+                                       Suscipit magnam consequuntur recusandae quasi possimus aliquam quod, hic
+                                       mollitia aspernatur. Provident aut atque magnam omnis porro ullam ex officia?
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-6">
+                           <div class="accordion-item">
+                              <h4 class="accordion-header">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq_4" aria-expanded="false" aria-controls="faq_4">
+                                    Accordion Item #3
+                                 </button>
+                              </h4>
+                              <div id="faq_4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                 <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, non.
+                                       Suscipit magnam consequuntur recusandae quasi possimus aliquam quod, hic
+                                       mollitia aspernatur. Provident aut atque magnam omnis porro ullam ex officia?
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+
+
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- faq section -->
+
+
+      </div>
+      <div class="footerContainer">
+         <div class="container-fluid">
+            <footer>
+
+               <div class="row footer-top  ">
+                  <div class="footer-brand p-3">
+                     <img src="../assets/images/brand/logo.svg" alt="" class="w-auto h-auto">
+                  </div>
+               </div>
+
+               <div class="row footer-bottom mt-4">
+                  <p class="text-white text-center">All Rights Reserved. GIGCLICKERS © 2024</p>
+               </div>
+            </footer>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- bootstrap and jquery cdn link -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+
+
+   <!-- custom javascript -->
+   <script src="../assets/js/master.js"></script>
+   <script src="../assets/js/custom.js"></script>
+   <!-- custom javascript -->
+</body>
+
+</html>
