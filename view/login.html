@@ -6,7 +6,7 @@
    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
    <!-- set your title -->
-   <title> Packly landing page</title>
+   <title> Task Burg Web</title>
 
    <meta name="description" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,9 +20,8 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" />
    <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
-   <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
-   <link rel="stylesheet" href="../../master-assets/css/master.css">
+   <link rel="stylesheet" href="../assets/css/master.css">
    <link rel="stylesheet" href="../assets/css/style.css">
    <link rel="stylesheet" href="../assets/css/responsive.css">
 
@@ -34,7 +33,7 @@
          <div class="container-fluid h-100">
             <nav class="navbar h-100">
                <div class="menuContainer d-flex align-items-center gap-5">
-                  <div class="navbar-brand">
+                  <div class="navbar-brand d-flex align-items-center gap-4">
                      <div class="mobile-nav-toggler">
                         <img src="../assets/images/icon/hamburger.svg" alt="" class="w-auto h-auto">
                      </div>
@@ -46,93 +45,87 @@
                      <ul class="navbar-nav" id="navbar-nav">
                         <li class="nav-item">
                            <a class="nav-link active" aria-current="page" href="#">
-                              Services
+                              Abou Us
                            </a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link " aria-current="page" href="#">
-                              Help
+                              FAQs
                            </a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" aria-current="page" href="#">
-                              About Us
+                              Articles
                            </a>
                         </li>
                      </ul>
                   </div>
                </div>
-               <div class="navbar-right d-flex gap-2 align-items-center">
-                  <div class="language me-4">
-                     EN
-                  </div>
-                  <div class="profileContainer d-flex gap-2">
-                     <a href="login.html"
-                        class="btn btn-link btn-md d-flex align-items-center justify-content-center">Log
-                        in</a>
-                     <a href="register.html"
-                        class="btn btn-primary btn-md d-flex align-items-center justify-content-center">Sign up</a>
-                     <!-- <div class="profile position-relative desktop" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        data-bs-title="Profile">
-                        <img src="../assets/images/user.png" alt="" class="profile-btn  dropdown-toggle"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="dropdown-menu" onclick="event.stopPropagation()">
-                           <ul class="d-flex flex-column gap-3">
-                              <li class="nav-item">
-                                 <a href="user_profile.html" class="nav-link">
-                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                       xmlns="http://www.w3.org/2000/svg">
-                                       <circle class="my_acc" cx="4" cy="4" r="4"
-                                          transform="matrix(-1 0 0 1 16.3652 3.95312)" stroke="#737373"
-                                          stroke-width="1.5">
-                                       </circle>
-                                       <path class="my_acc"
-                                          d="M5.36523 17.8878C5.36523 17.0274 5.90609 16.26 6.71633 15.9706V15.9706C10.3693 14.666 14.3612 14.666 18.0141 15.9706V15.9706C18.8244 16.26 19.3652 17.0274 19.3652 17.8878V19.2033C19.3652 20.3907 18.3135 21.3029 17.138 21.135L16.1836 20.9986C13.6509 20.6368 11.0796 20.6368 8.54686 20.9986L7.59244 21.135C6.41694 21.3029 5.36523 20.3907 5.36523 19.2033V17.8878Z"
-                                          stroke="#737373" stroke-width="1.5"></path>
-                                    </svg>
-                                    <span class="title">Profile</span>
-                                 </a>
-                              </li>
-                              <li class="nav-item">
-                                 <a href="setting.html" class="nav-link">
-                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
-                                       xmlns="http://www.w3.org/2000/svg">
-                                       <rect class="cng-pass" x="4" y="9.95312" width="16" height="12" rx="4"
-                                          stroke="#737373" stroke-width="1.5"></rect>
-                                       <path class="cng-pass" d="M12 16.9531L12 14.9531" stroke="#737373"
-                                          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                       <path class="cng-pass"
-                                          d="M16 9.95313V7.95313C16 5.74399 14.2091 3.95312 12 3.95312V3.95312C9.79086 3.95312 8 5.74399 8 7.95312L8 9.95313"
-                                          stroke="#737373" stroke-width="1.5"></path>
-                                    </svg>
-                                    <span class="title">Reset Password</span>
-                                 </a>
-                              </li>
-                              <li class="nav-item">
-                                 <a href="setting.html" class="nav-link">
-                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                       xmlns="http://www.w3.org/2000/svg">
-                                       <path class="logout"
-                                          d="M16.3652 16.9531V18.9531C16.3652 21.1623 14.5744 22.9531 12.3652 22.9531H7.36523C5.1561 22.9531 3.36523 21.1623 3.36523 18.9531V6.95313C3.36523 4.74399 5.1561 2.95312 7.36523 2.95312H12.3652C14.5744 2.95312 16.3652 4.74399 16.3652 6.95312V8.95312"
-                                          stroke="#737373" stroke-width="1.5" stroke-linecap="round"></path>
-                                       <path class="logout"
-                                          d="M19.3652 15.9531L21.6581 13.6602C22.0487 13.2697 22.0487 12.6365 21.6581 12.246L19.3652 9.95313"
-                                          stroke="#737373" stroke-width="1.5" stroke-linecap="round"></path>
-                                       <path class="logout" d="M21.3652 12.9531L9.36523 12.9531" stroke="#737373"
-                                          stroke-width="1.5" stroke-linecap="round"></path>
-                                    </svg>
-                                    <span class="title">Log Out</span>
-                                 </a>
-                              </li>
-                           </ul>
-                        </div>
-                     </div> -->
-                     <!-- <div class="profile position-relative mobile" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        data-bs-title="Profile">
-                        <img src="../assets/images/user.png" alt="" class="profile-btn">
+               <div class="profileContainer d-flex gap-2">
+                  <a href="login.html" class="btn btn-link btn-md d-flex align-items-center justify-content-center">Log
+                     in</a>
+                  <a href="register.html"
+                     class="btn btn-primary btn-md d-flex align-items-center justify-content-center">Register</a>
+                  <!-- <div class="profile position-relative desktop" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                     data-bs-title="Profile">
+                     <img src="../assets/images/user.png" alt="" class="profile-btn  dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                     <div class="dropdown-menu" onclick="event.stopPropagation()">
+                        <ul class="d-flex flex-column gap-3">
+                           <li class="nav-item">
+                              <a href="user_profile.html" class="nav-link">
+                                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="my_acc" cx="4" cy="4" r="4"
+                                       transform="matrix(-1 0 0 1 16.3652 3.95312)" stroke="#737373"
+                                       stroke-width="1.5">
+                                    </circle>
+                                    <path class="my_acc"
+                                       d="M5.36523 17.8878C5.36523 17.0274 5.90609 16.26 6.71633 15.9706V15.9706C10.3693 14.666 14.3612 14.666 18.0141 15.9706V15.9706C18.8244 16.26 19.3652 17.0274 19.3652 17.8878V19.2033C19.3652 20.3907 18.3135 21.3029 17.138 21.135L16.1836 20.9986C13.6509 20.6368 11.0796 20.6368 8.54686 20.9986L7.59244 21.135C6.41694 21.3029 5.36523 20.3907 5.36523 19.2033V17.8878Z"
+                                       stroke="#737373" stroke-width="1.5"></path>
+                                 </svg>
+                                 <span class="title">Profile</span>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="setting.html" class="nav-link">
+                                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="cng-pass" x="4" y="9.95312" width="16" height="12" rx="4"
+                                       stroke="#737373" stroke-width="1.5"></rect>
+                                    <path class="cng-pass" d="M12 16.9531L12 14.9531" stroke="#737373"
+                                       stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path class="cng-pass"
+                                       d="M16 9.95313V7.95313C16 5.74399 14.2091 3.95312 12 3.95312V3.95312C9.79086 3.95312 8 5.74399 8 7.95312L8 9.95313"
+                                       stroke="#737373" stroke-width="1.5"></path>
+                                 </svg>
+                                 <span class="title">Reset Password</span>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="setting.html" class="nav-link">
+                                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="logout"
+                                       d="M16.3652 16.9531V18.9531C16.3652 21.1623 14.5744 22.9531 12.3652 22.9531H7.36523C5.1561 22.9531 3.36523 21.1623 3.36523 18.9531V6.95313C3.36523 4.74399 5.1561 2.95312 7.36523 2.95312H12.3652C14.5744 2.95312 16.3652 4.74399 16.3652 6.95312V8.95312"
+                                       stroke="#737373" stroke-width="1.5" stroke-linecap="round"></path>
+                                    <path class="logout"
+                                       d="M19.3652 15.9531L21.6581 13.6602C22.0487 13.2697 22.0487 12.6365 21.6581 12.246L19.3652 9.95313"
+                                       stroke="#737373" stroke-width="1.5" stroke-linecap="round"></path>
+                                    <path class="logout" d="M21.3652 12.9531L9.36523 12.9531" stroke="#737373"
+                                       stroke-width="1.5" stroke-linecap="round"></path>
+                                 </svg>
+                                 <span class="title">Log Out</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div> -->
+                  <!-- <div class="profile position-relative mobile" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                     data-bs-title="Profile">
+                     <img src="../assets/images/user.png" alt="" class="profile-btn">
 
-                     </div> -->
-                  </div>
+                  </div> -->
                </div>
 
             </nav>
@@ -155,173 +148,177 @@
 
 
             </div>
-            <div class="language ">
-               EN
-            </div>
          </nav>
       </div>
 
       <div class="main-content">
 
-         <!-- login page -->
-         <div class="auth-wrapper mt-5">
-            <div class="content-area">
-               <div class="favcon-icon d-flex align-items-center justify-content-center mb-3">
-                  <img src="../assets/images/footer_logo.svg" alt="" class="w-auto h-auto">
-               </div>
-               <h5 class=" mb-4 text-center">Welcome Back</h5>
-
-               <form action="" class="needs-validation" novalidate="">
+         <!-- authentication page -->
+         <div class="auth-wrapper">
+            <div class="container-fluid">
+               <div class="auth">
                   <div class="row">
-                     <div class="col-sm-12">
-                        <div class="form-group position-relative mb-3">
-                           <input type="text" name="phone_mail" class="form-control" value="" id="phn_num"
-                              placeholder="Mail or Phone no" required>
-                           <div class="invalid-feedback">
-                              Please provide valid mail/phone no.
-                           </div>
+                     <div class="col-sm-6">
+                        <div class="auth-bg">
+                           <img src="../assets/images/auth_banar.svg" alt="" class="w-auto h-auto">
                         </div>
                      </div>
-                     <div class="col-sm-12">
-                        <div class="form-group position-relative mb-3">
-                           <input name="password" type="password" class="form-control" id="pass" placeholder="Password"
-                              required>
-                           <div class="invalid-feedback">
-                              Please provide phone no.
+                     <div class="col-sm-6">
+                        <div class="auth-content h-100">
+                           <div class="auth-form d-flex flex-column justify-content-around h-100">
+                              <div class="auth-info text-center">
+                                 <h4 class="fw-600">Welcome to taskburg</h4>
+                                 <p class="font-16 fw-500 mt-2">Login to your account to continue</p>
+                              </div>
+                              <form action="">
+                                 <div class="row">
+                                    <div class="col-sm-12">
+                                       <div class="form-group">
+                                          <label for="" class="form-label">Email</label>
+                                          <input type="email" class="form-control" placeholder="Enter Email">
+                                       </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                       <div class="form-group">
+                                          <label for="" class="form-label">Password</label>
+                                          <input type="password" class="form-control" placeholder="Enter Password">
+                                       </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                       <div class="d-flex justify-content-between">
+                                          <div class="form-group">
+                                             <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                   id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                   Remember me
+                                                </label>
+                                             </div>
+                                          </div>
+                                          <a href="#" class="font-14 fw-500 text-black">Forgot Password?</a>
+                                       </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                       <div class="form-group mt-3">
+                                          <button class="btn btn-primary w-100 btn-sm">Login</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </form>
+                              <p class="text-center fw-700">OR</p>
+                              <div class="socialMedia">
+                                 <div class="row">
+                                    <div class="col-sm-12">
+                                       <a href="#"
+                                          class="socialBtn d-flex align-items-center justify-content-center gap-2"><img
+                                             src="../assets/images/icon/google.svg" alt="" class="w-auto h-auto">Log In
+                                          with google</a>
+                                    </div>
+                                    <div class="col-sm-12">
+                                       <a href="#"
+                                          class="socialBtn d-flex align-items-center justify-content-center gap-2"><img
+                                             src="../assets/images/icon/facebook.svg" alt="" class="w-auto h-auto">Log
+                                          In with Facebook</a>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <a href="#" class="text-center">Don’t have an account? <span
+                                    class="fw-600 text-primary">Signup</span></a>
+
                            </div>
                         </div>
-                     </div>
-                     <div class="col-sm-12">
-                        <button type="submit" class="btn btn-primary btn-sm mt-3 w-100">Submit</button>
                      </div>
                   </div>
-               </form>
-
-               <div class="text-end mt-3">
-                  <a href="#" class="font-14">Forgot Password?</a>
                </div>
+            </div>
+            <!-- authentication page -->
 
+
+
+
+         </div>
+         <div class="footerContainer">
+            <div class="container-fluid">
+               <footer>
+                  <div class=" footer-top d-flex justify-content-between">
+                     <div class="footer-brand p-3">
+                        <img src="../assets/images/brand/logo.svg" alt="" class="w-auto h-auto">
+                     </div>
+                     <div class="sort-summary d-flex align-items-center  gap-3">
+                        <div class="summary d-flex align-items-center gap-3">
+                           <div class="summary-icon">
+                              <img src="../assets/images/icon/active_member-wg.svg" alt="" class="w-auto h-auto">
+                           </div>
+                           <div class="summary-content">
+                              <h5 class="fw-600 text-white">10000+</h5>
+                              <p class="text-white">Active members</p>
+                           </div>
+                        </div>
+                        <div class="summary d-flex align-items-center gap-3">
+                           <div class="summary-icon">
+                              <img src="../assets/images/icon/avl_task_wg.svg" alt="" class="w-auto h-auto">
+                           </div>
+                           <div class="summary-content">
+                              <h5 class="fw-600 text-white">1650+</h5>
+                              <p class="text-white">Available Tasks</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class=" footer-bottom mt-4">
+                     <div class="row">
+                        <div class="col">
+                           <p class="text-white">Track connections in real time. See who your community being lead by
+                              and
+                              find the most active
+                              Track connections</p>
+                        </div>
+                        <div class="col">
+                           <h5 class="fw-600 text-white">Company</h5>
+                           <ul class="d-flex flex-column link gap-1 mt-3">
+                              <li><a href="#">About Us</a></li>
+                              <li><a href="#">Privacy Policy</a></li>
+                              <li><a href="#">Terms & Conditions</a></li>
+                           </ul>
+                        </div>
+                        <div class="col">
+                           <h5 class="fw-600 text-white">Agreement</h5>
+                           <ul class="d-flex flex-column link gap-1 mt-3">
+                              <li><a href="#">Microjob Marketplace</a></li>
+                              <li><a href="#">Deal Marketplace</a></li>
+                           </ul>
+                        </div>
+                        <div class="col">
+                           <h5 class="fw-600 text-white">Agreement</h5>
+                           <ul class="d-flex gap-3 social-icon mt-3">
+                              <li><a href="#" class="text-white "><i class="fa-brands fa-square-instagram"></i></a>
+                              </li>
+                              <li><a href="#" class="text-white"><i class="fa-brands fa-square-facebook"></i></a></li>
+                              <li><a href="#" class="text-white"><i class="fa-brands fa-youtube"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </footer>
             </div>
          </div>
-         <!-- login page -->
-
       </div>
-      <div class="footerContainer">
-         <div class="container-fluid">
-            <footer>
-               <!-- row-cols-1 row-cols-sm-2 row-cols-md-4 -->
-               <div class="row   ">
-                  <div class="col ">
-                     <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                        <img src="../assets/images/brand/f_logo.svg" alt="" class="w-auto h-auto">
-                     </a>
-                     <p class="font-16 mt-3 text-white">House# 44 , Rd No. 2/A, Dhanmondi Zigatola Bus Stand , Dhaka,
-                        1209</p>
-                     <div class="app-download d-flex gap-3 mt-3">
-                        <a href="#"> <img src="../assets/images/google.svg" alt="" class="w-auto"></a>
-                        <a href="#"> <img src="../assets/images/apple.svg" alt="" class="w-auto"></a>
-                     </div>
-                  </div>
-
-                  <div class="col ps-5 pe-5">
-                     <h5>Services</h5>
-                     <ul class="nav flex-column">
-                        <li class="nav-item ">
-                           <a href="#" class="nav-link ">Shop</a>
-                        </li>
-                        <li class="nav-item ">
-                           <a href="#" class="nav-link ">Courier</a>
-                        </li>
-                        <li class="nav-item ">
-                           <a href="#" class="nav-link ">Parcel</a>
-                        </li>
-                        <li class="nav-item ">
-                           <a href="#" class="nav-link ">Ride</a>
-                        </li>
-                        <li class="nav-item ">
-                           <a href="#" class="nav-link ">Food</a>
-                        </li>
-                        <li class="nav-item ">
-                           <a href="#" class="nav-link ">Rent a car</a>
-                        </li>
-                     </ul>
-                  </div>
-
-                  <div class="col ps-5 pe-5">
-                     <h5>Company</h5>
-                     <ul class="nav flex-column">
-                        <li class="nav-item ">
-                           <a href="#" class="nav-link ">About Us</a>
-                        </li>
-                        <li class="nav-item ">
-                           <a href="#" class="nav-link ">Our Social Impacrt</a>
-                        </li>
-                        <li class="nav-item ">
-                           <a href="#" class="nav-link ">Blogs</a>
-                        </li>
-                        <li class="nav-item ">
-                           <a href="#" class="nav-link ">Careers</a>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="col ps-5 pe-5">
-                     <h5>Merchant</h5>
-                     <ul class="nav flex-column">
-                        <li class="nav-item ">
-                           <a href="#" class="nav-link ">Courier Merchant Sign Up</a>
-                        </li>
-                        <li class="nav-item ">
-                           <a href="#" class="nav-link ">Courier Merchant Login</a>
-                        </li>
-                     </ul>
-                  </div>
-
-                  <div class="col ">
-                     <h5>Help</h5>
-                     <ul class="nav flex-column">
-                        <li class="nav-item ">
-                           <a href="#" class="nav-link ">Merchant Help Centre</a>
-                        </li>
-                        <li class="nav-item ">
-                           <a href="#" class="nav-link ">Courier Help Centre</a>
-                        </li>
-                        <li class="nav-item ">
-                           <a href="#" class="nav-link ">Parcel Help Centre</a>
-                        </li>
-                        <li class="nav-item ">
-                           <a href="#" class="nav-link ">Ride Help Centre</a>
-                        </li>
-                        <li class="nav-item ">
-                           <a href="#" class="nav-link ">Food Help Centre</a>
-                        </li>
-                        <li class="nav-item ">
-                           <a href="#" class="nav-link ">Rent a car Help Centre</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </footer>
-         </div>
-      </div>
-   </div>
 
 
-   <!-- bootstrap and jquery cdn link -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+      <!-- bootstrap and jquery cdn link -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
 
 
-   <!-- custom javascript -->
-   <script src="../../master-assets/js/master.js"></script>
-   <script src="../assets/js/custom.js"></script>
-   <!-- custom javascript -->
-
-
-
+      <!-- custom javascript -->
+      <script src="../assets/js/master.js"></script>
+      <script src="../assets/js/custom.js"></script>
+      <!-- custom javascript -->
 </body>
 
 </html>
