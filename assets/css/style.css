@@ -88,6 +88,7 @@ body {
 .profile .profile-btn {
   width: 48px;
   height: 48px;
+  border-radius: 50%;
 }
 
 .profileContainer .dropdown-menu {
@@ -338,3 +339,11 @@ body {
 }
 
 /* login page */
+
+/* message page */
+.message-wrapper {
+  width: 576px;
+  margin: 0 auto;
+}
+
+/* message page */
