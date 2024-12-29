@@ -300,6 +300,15 @@ body {
   border-radius: 16px;
 }
 
+.credintial-auth {
+  width: 780px;
+  margin: 0 auto;
+  background: var(--bs-white);
+  border: 1px solid var(--bs-neutral-300);
+  border-radius: 16px;
+  padding: 32px;
+}
+
 .auth-form .row {
   row-gap: 8px;
 }
@@ -316,6 +325,16 @@ body {
   border: 1px solid var(--bs-neutral-300);
   border-radius: 4px;
   padding: 6px 0;
+}
+
+.input-field.otp {
+  width: 470px;
+  margin: 0 auto;
+}
+
+.input-field.otp .form-control {
+  padding: 1.5rem 0.75rem;
+  text-align: center;
 }
 
 /* login page */
