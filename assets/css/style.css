@@ -134,6 +134,19 @@ body {
   display: none;
 }
 
+.action-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-menu .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-radius: 50%;
+}
+
 /* navbar css */
 
 /* main content css */
@@ -177,6 +190,9 @@ body {
   padding-left: 24px;
 }
 
+.footer-menu {
+  display: none;
+}
 
 
 /* hero section css */
