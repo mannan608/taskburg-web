@@ -80,9 +80,9 @@
     align-items: start;
   }
 
-  .profile.desktop {
+  /* .profile.desktop {
     display: none;
-  }
+  } */
 
   .profile.mobile {
     display: block;
@@ -110,5 +110,9 @@
   }
 
   /* footer menu */
+
+  .createPost {
+    display: none !important;
+  }
 
 }

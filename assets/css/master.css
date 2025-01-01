@@ -1405,68 +1405,55 @@ address {
 /* image or file upload */
 
 /* table css */
-.table-wrapper {
-  overflow-x: auto;
-  width: 100%;
+.table-responsive {
+  background: var(--bs-white);
+  padding: 14px;
 }
 
-.table .cell {
-  width: attr(data-width);
-}
-
-.table .thead,
-.table .tbody {
-  display: block;
-}
-
-.table-wrapper::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-}
-
-.table {
-  margin: 0;
-  display: block;
-  min-width: max-content;
-}
-
-.table .row .cell {
-  width: fit-content;
-  display: flex !important;
-  align-items: center;
-}
-
-.table .tbody .row,
-.table .thead .row {
-  font-size: 14px;
-  color: var(--bs-neutral-900);
-  justify-content: space-between;
-  gap: 14px;
-}
-
-.table .tbody .row p,
-.table .tbody .row span,
-.table .thead .row p,
-.table .thead .row span {
-  font-size: 14px;
-  color: var(--bs-neutral-900);
-}
-
-.table .thead .row {
+.table-responsive .table thead {
+  background: var(--bs-neutral-100);
+  border-radius: 12px 0 12px 0;
+  font-size: 16px;
   font-weight: 500;
-  padding: 6px 8px;
-  background: var(--bs-primary-600);
-  color: var(--bs-white);
+  line-height: 20px;
 }
 
-.table .tbody .row {
+.table-responsive .table thead tr {
+  border: 1px solid transparent !important;
+}
+
+.table-responsive .table thead tr th {
+  padding: 20px 14px;
+}
+
+.table-responsive .table tbody {
+  font-size: 14px;
   font-weight: 400;
-  padding: 14px 8px;
-  border-bottom: 1px solid var(--bs-neutral-200);
+  line-height: 18px;
 }
 
-.table .tbody .row:last-child {
-  border-bottom: 1px solid transparent;
+.table-responsive .table tbody tr {
+  border-bottom: 1px solid var(--bs-neutral-300) !important;
+}
+
+.table-responsive .table tbody tr td {
+  padding: 14px;
+}
+
+.table-responsive .table tbody tr,
+.table-responsive .table thead tr {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.table-responsive .table>:not(caption)>*>* {
+  border-bottom-width: 0px;
+}
+
+.table-responsive::-webkit-scrollbar {
+  width: 0px;
+  height: 4px;
 }
 
 /* table css */
@@ -1652,7 +1639,7 @@ select+.select2-container--bootstrap-5 {
 
 .choices[data-type*="select-one"] .choices__inner {
   padding-bottom: 5px !important;
-  background: var(--bs-neutral-200);
+  background: var(--bs-white);
 }
 
 .choices__list--dropdown,
@@ -1671,13 +1658,44 @@ select+.select2-container--bootstrap-5 {
   border-radius: 4px;
 }
 
-.choices[data-type*="select-one"]::after {
+/* .choices[data-type*="select-one"]::after {
   display: none;
-}
+} */
 
 .choices__list--dropdown .choices__item,
 .choices__list[aria-expanded] .choices__item {
   padding: 4px 10px;
+}
+
+.choices[data-type*=select-one].is-open::after {
+  content: "";
+  border-width: 1px 0 0 1px;
+  border-style: solid;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  transition: all 0.3s ease-out;
+  border-color: var(--bs-black);
+  transform: rotate(45deg) translateY(0%);
+  top: 70%;
+}
+
+
+.choices[data-type*=select-one]::after {
+  width: 0.5rem;
+  height: 0.5rem;
+  right: 14px;
+  top: 50%;
+  border-color: inherit;
+  -webkit-transform: rotate(-136deg) translateY(-50%);
+  transform: rotate(-136deg) translateY(-50%);
+  position: absolute;
+  content: "";
+  border-width: 1px 0 0 1px;
+  border-style: solid;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  transition: all 0.3s ease-out;
+  border-color: var(--bs-black);
 }
 
 /* select choice css code */
