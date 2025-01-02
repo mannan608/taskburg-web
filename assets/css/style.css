@@ -431,3 +431,327 @@ form.dashboard-filter .row {
 form.dashboard-filter .col-md-4 {
   padding: 0 8px;
 }
+
+.table-responsive .table tbody tr {
+  border-bottom: 1px solid transparent !important;
+}
+
+.table-responsive .table tbody tr:nth-child(even) {
+  background: #F8FAFC;
+}
+
+.job-question {
+  width: 720px;
+  margin: 0 auto;
+}
+
+.job-question .card {
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.job-details .row {
+  margin: 0 -24px;
+}
+
+.job-details .row .col-8,
+.job-details .row .col-4 {
+  padding: 0 24px;
+}
+
+
+
+.job-summarry ul li {
+  border-bottom: 1px solid var(--bs-neutral-300);
+  padding-bottom: 8px;
+}
+
+.job-summarry ul li:last-child {
+  border-bottom: 1px solid transparent;
+}
+
+.job-details .task-tab {
+  border-bottom: 1px solid var(--bs-neutral-300);
+  padding-bottom: 24px;
+}
+
+.job-details .task-tab .btn-link {
+  border-bottom: 1px solid var(--bs-danger-500);
+  color: var(--bs-danger-500);
+  border-radius: 0;
+}
+
+.job-details .task-tab .btn-link:hover,
+.job-details .task-tab .btn-link:focus {
+  border-bottom: 1px solid var(--bs-danger-500) !important;
+  color: var(--bs-danger-500) !important;
+  border-radius: 0;
+}
+
+.task-screenshot .images {
+  flex-wrap: wrap;
+}
+
+.task-screenshot .images .image {
+  width: calc(33.33% - 16px);
+}
+
+.attach-file.dragDrop-area {
+  width: 140px;
+  height: 36px;
+  border: 2px solid var(--bs-primary-300);
+  border-radius: 4px;
+  background: var(--bs-white);
+}
+
+.wallet-tab .card {
+  width: fit-content;
+  border: 0;
+  padding: 8px 40px 8px 16px;
+  background: #F1F5F9;
+
+}
+
+.tab-menus .btn-secondary {
+  background: var(--bs-neutral-200);
+  color: var(--bs-neutral-600);
+}
+
+.tab-menus .btn-secondary:hover {
+  background: var(--bs-primary-500);
+  color: var(--bs-white);
+}
+
+.tab-menus .btn-secondary:focus {
+  background: var(--bs-primary-500) !important;
+  color: var(--bs-white) !important;
+}
+
+.wallet .row form .row {
+  margin: 0 -12px;
+}
+
+.wallet .row {
+  margin: 0 -24px;
+}
+
+.wallet .row .col-8,
+.wallet .row .col-4 {
+  padding: 0 24px;
+}
+
+.waller-summary ul li {
+  border-bottom: 1px solid var(--bs-neutral-300);
+  padding-bottom: 8px;
+}
+
+.waller-summary ul li:last-child {
+  border-bottom: 1px solid transparent;
+}
+
+.wallet-content .walletCard {
+  padding: 32px;
+}
+
+.wallet-balance {
+  background: #001B40;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.walletCard .paymentMethod {
+  flex-wrap: wrap;
+}
+
+.walletCard .paymentMethod .card {
+  border-radius: 8px;
+  min-width: 100px;
+}
+
+.walletCard .paymentMethod .card .card-body {
+  padding: 16px 24px;
+}
+
+.wallet-balance.deposit {
+  background: #F1F5F9;
+}
+
+.paymentMethod .card {
+  cursor: pointer;
+}
+
+.paymentMethod .card.active {
+  border: 1px solid var(--bs-primary-500);
+}
+
+.create-task .row {
+  margin: 0 -24px;
+}
+
+.create-task .row .col-8,
+.create-task .row .col-4 {
+  padding: 0 24px;
+}
+
+.task_tracking .tracking-steps {
+  padding: 20px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.streamline .step {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 14px;
+  position: relative;
+  overflow: hidden;
+  align-items: start;
+}
+
+.streamline .step .tracking_content {
+  width: calc(100% - 54px);
+}
+
+.streamline .step .date-time p {
+  color: var(--bs-neutral-500);
+  font-size: 13px;
+}
+
+.streamline .step .step-icon::after {
+  content: "";
+  background: #d4dae1;
+  width: 1px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin: 8px 0;
+}
+
+.streamline .step .step-icon {
+  width: 40px;
+  min-height: 96px;
+  max-height: fit-content;
+  position: relative;
+}
+
+.streamline .step .step-icon .step-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--bs-neutral-300);
+  color: var(--bs-neutral-500) !important;
+}
+
+.streamline .step .step-icon .step-circle h6 {
+  color: var(--bs-neutral-500);
+}
+
+
+
+.streamline .step .step-icon .step-circle.isComplete {
+  border: 1px solid var(--bs-primary-500) !important;
+}
+
+.streamline .step .step-icon .step-circle.isComplete h6 {
+  color: var(--bs-neutral-900) !important;
+}
+
+.streamline .step:last-child .step-icon::after {
+  width: 0px;
+  height: 0;
+}
+
+.nextBtn .btn {
+  width: 140px;
+}
+
+.create-task .form-check .form-check-label {
+  font-weight: 400;
+  color: var(--bs-neutral-900);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 24px;
+  border: 1px solid var(--bs-neutral-300);
+  border-radius: 4px;
+  background: var(--bs-white);
+}
+
+.create-task .form-check {
+  padding-left: 0;
+  width: fit-content;
+}
+
+.create-task .form-check-input:checked+.form-check-label {
+  /* Change this to your desired color */
+  border: 1px solid var(--bs-primary-500);
+  background: #E6ECF5;
+  color: var(--bs-primary-500);
+
+}
+
+.target_zone,
+.task-category {
+  flex-wrap: wrap;
+}
+
+.proof {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.proof-input {
+  width: calc(100% - 230px);
+}
+
+
+.proof-select {
+  width: 210px;
+}
+
+.choices__inner {
+  min-height: 48px;
+}
+
+.notification .icon {
+  width: 72px;
+  min-height: 72px;
+  max-height: fit-content;
+  position: relative;
+}
+
+.notification .content {
+  width: calc(100% - 86px);
+}
+
+.notificationContainer .notification {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 14px;
+  position: relative;
+  overflow: hidden;
+  align-items: start;
+  border-bottom: 1px solid var(--bs-neutral-300);
+  padding: 10px;
+}
+
+.notificationContainer .notification:last-child {
+  border-bottom: 1px solid transparent;
+}
+
+.notification.read {
+  h6 {
+    color: var(--bs-neutral-500) !important;
+  }
+
+  p {
+    color: var(--bs-neutral-400) !important;
+  }
+}
