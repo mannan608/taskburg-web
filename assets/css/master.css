@@ -140,7 +140,7 @@ textarea.form-control:focus {
 
 [type="search"] {
   outline-offset: inherit;
-  border: none !important;
+  /* border: none !important; */
 }
 
 /* Chrome, Safari, Edge, Opera */

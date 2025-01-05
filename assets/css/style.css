@@ -898,3 +898,34 @@ form.dashboard-filter .col-md-4 {
   background: var(--bs-neutral-100);
   border-radius: 4px;
 }
+
+#task-satisfy-modal .btn-link {
+  border-bottom: 1px solid var(--bs-danger-500);
+  color: var(--bs-danger-500);
+  border-radius: 0;
+}
+
+.task-details {
+  .row {
+    margin: 0 -24px;
+  }
+
+  .col-4,
+  .col-8 {
+    padding: 0 24px;
+  }
+}
+
+.search_icon {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.filter .searchField {
+  padding: 0.532rem 0.75rem 0.532rem 2.3rem;
+}
+
+.filter .choices__inner {
+  min-height: 40px;
+}

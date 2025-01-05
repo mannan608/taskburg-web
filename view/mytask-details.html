@@ -177,7 +177,9 @@
 
          <div class="dashboard">
             <div class="container-fluid">
-               <div class="page-title">
+
+               <!-- task details -->
+               <!-- <div class="page-title">
                   <a href="mytasks.html" class="font-18 fw-600"><img src="../assets/images/icon/back_icon.svg" alt=""
                         class="w-auto h-auto">
                      Back</a>
@@ -257,15 +259,6 @@
 
                               </div>
                            </div>
-                           <div class="task-screenshot mt-5">
-                              <h4>Example Screenshot</h4>
-                              <div class="images d-flex gap-3 mt-3">
-                                 <div class="image"><img src="../assets/images/task_img.svg" alt=""></div>
-                                 <div class="image"><img src="../assets/images/task_img.svg" alt=""></div>
-                                 <div class="image"><img src="../assets/images/task_img.svg" alt=""></div>
-                              </div>
-
-                           </div>
                         </div>
                      </div>
                      <div class="col-4">
@@ -278,9 +271,13 @@
                                     <h5 class="mt-1">2wjsKJS1NS1SDS</h5>
                                  </li>
                                  <li>
-                                    <p>Employer</p>
-                                    <h5 class="mt-1 d-flex align-items-center gap-3 cursor-pointer">Kawser080 <img
-                                          src="../assets/images/icon/copy_text.svg" class="w-auto h-auto " alt=""></h5>
+                                    <p>Task posted</p>
+                                    <h5 class="mt-1 d-flex align-items-center gap-3 cursor-pointer">Oct 12, 2024 10:45
+                                       AM</h5>
+                                 </li>
+                                 <li>
+                                    <p>Freelancer Earn</p>
+                                    <h5 class="mt-1">$0.078 </h5>
                                  </li>
                                  <li>
                                     <p>Duration</p>
@@ -288,7 +285,7 @@
                                  </li>
                                  <li>
                                     <p>Category</p>
-                                    <h5 class="mt-1">Youtube > Watch video (1-5 min) </h5>
+                                    <h5 class="mt-1">Youtube > Watch video (1-5 min)</h5>
                                  </li>
                                  <li>
                                     <p>Abdul Mannan</p>
@@ -299,13 +296,96 @@
                                  </li>
                               </ul>
                               <button class="btn btn-primary w-100 mt-4 btn-md" data-bs-toggle="modal"
-                                 data-bs-target="#task-submiting-modal">Submit Task</button>
+                                 data-bs-target="#task-submiting-modal">Pause Task</button>
                            </div>
                         </div>
                      </div>
                   </div>
+               </div> -->
+               <!-- task details -->
 
+               <!-- submited task -->
+               <div class="page-title d-flex align-items-center justify-content-between">
+                  <a href="mytasks.html" class="font-18 fw-600"><img src="../assets/images/icon/back_icon.svg" alt=""
+                        class="w-auto h-auto">
+                     Submitted Tasks</a>
+                  <button class="btn btn-primary btn-md" data-bs-toggle="modal"
+                     data-bs-target="#task-satisfy-modal">Satisfied Task</button>
                </div>
+               <div class="card mt-3 p-3">
+                  <div class="table-responsive">
+                     <table class="table">
+                        <thead>
+                           <tr>
+                              <th style="width: 130px;">
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                       Select All
+                                    </label>
+                                 </div>
+                              </th>
+                              <th style="width: 160px;">Freelancer Name</th>
+                              <th style="width: 150px;">Country</th>
+                              <th style="width: 140px;">Status</th>
+                              <th style="width: 120px;">Action</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr class="cursor-pointer">
+                              <td style="width: 130px;">
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label d-none" for="flexCheckDefault">
+                                       Select All
+                                    </label>
+                                 </div>
+                              </td>
+                              <td style="width: 150px;">
+                                 <a href="#" class="text-primary">akashbasak121</a>
+                              </td>
+                              <td style="width: 150px;">
+                                 Banglaadesh
+                              </td>
+                              <td style="width: 140px;">
+                                 <div class="alert alert-success-50 alert-sm" role="alert">
+                                    Satisfied
+                                 </div>
+                              </td>
+                              <td style="width: 120px;"><a href="#" class="text-primary fw-500 font-14">
+                                    <img src="../assets/images/icon/view.svg" alt="" class="w-auto h-auto me-2"> View
+                                 </a></td>
+                           </tr>
+                           <tr class="cursor-pointer">
+                              <td style="width: 130px;">
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label d-none" for="flexCheckDefault">
+                                       Select All
+                                    </label>
+                                 </div>
+                              </td>
+                              <td style="width: 150px;">
+                                 <a href="#" class="text-primary">akashbasak121</a>
+                              </td>
+                              <td style="width: 150px;">
+                                 Banglaadesh
+                              </td>
+                              <td style="width: 140px;">
+                                 <div class="alert alert-warning-50 alert-sm" role="alert">
+                                    Pending
+                                 </div>
+                              </td>
+                              <td style="width: 120px;"><a href="#" class="text-primary fw-500 font-14">
+                                    <img src="../assets/images/icon/view.svg" alt="" class="w-auto h-auto me-2"> View
+                                 </a></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+
+               <!-- submited task -->
 
             </div>
          </div>
@@ -377,6 +457,73 @@
             </footer>
          </div>
       </div>
+      <!-- satisfy modal -->
+      <div class="modal" id="task-satisfy-modal">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-body p-4">
+                  <h5 class="text-center">Rate Work</h5>
+                  <div class="card p-3 mt-3">
+                     <h6>Task Details</h6>
+                     <div class="task-details mt-3 d-flex gap-3 justify-content-between">
+                        <div class="w-50">
+                           <p>Job ID:
+                              <span class="fw-600">123456789</span>
+                           </p>
+                           <div class="d-flex gap-3 align-items-center">
+                              <p>Freelancer: </p>
+                              <span class="fw-600">Akashbasak599</span>
+                              <button class="btn btn-link">Report</button>
+                           </div>
+                        </div>
+                        <div class="w-50">
+                           <p>Job Submitted: <span class="fw-600"> Oct 12, 2024 10:45 AM</span> </p>
+                           <p>Cost: <span>$0.078</span> </p>
+                        </div>
+                     </div>
+                  </div>
+                  <h6 class="mt-3">Submitted Proofs</h6>
+
+                  <p class="mt-3">Proof 1: <span class="fw-600">ভিডিও -এর মতো স্ক্রিনশট দিন</span></p>
+
+                  <div class="task-screenshot mt-2">
+                     <div class="images d-flex gap-3 mt-3">
+                        <div class="image"><img src="../assets/images/task_img.svg" alt=""></div>
+                     </div>
+                  </div>
+
+                  <p class="mt-3">Proof 2: <span class="fw-600">Telegram User Name?</span></p>
+                  <p class="mt-1">আকাশ বসাক</p>
+
+                  <h6 class="mt-3">Rate Freelancer</h6>
+                  <form action="">
+                     <div class="rate-freelancer mt-3 d-flex gap-3 align-items-center">
+                        <div class="form-check">
+                           <input class="form-check-input" type="checkbox" value="" id="satisfy">
+                           <label class="form-check-label" for="satisfy" style="color: #209610;">
+                              Satisfied
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="checkbox" value="" id="not-satisfy">
+                           <label class="form-check-label" for="not-satisfy" style="color: #DF2638;">
+                              Not Satisfied
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="checkbox" value="" id="ask-for-revision">
+                           <label class="form-check-label" for="ask-for-revision" style="color: #C26D18;">
+                              Ask for Revision
+                           </label>
+                        </div>
+                     </div>
+                     <button class="btn btn-primary mt-5 w-100 btn-md">Submit</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+
    </div>
    <div class="footer-menu">
       <ul class="w-100">
