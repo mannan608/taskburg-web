@@ -929,3 +929,28 @@ form.dashboard-filter .col-md-4 {
 .filter .choices__inner {
   min-height: 40px;
 }
+
+.article .card {
+  border-radius: 12px;
+}
+
+.article-lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+  grid-gap: 0;
+  grid-gap: 24px;
+  gap: 24px;
+  grid-row-gap: 30px;
+  row-gap: 30px;
+}
+
+.article-details {
+  .row {
+    margin: 0 -12px;
+  }
+
+  .col-8,
+  .col-4 {
+    padding: 0 12px;
+  }
+}
