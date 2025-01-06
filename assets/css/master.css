@@ -1311,14 +1311,14 @@ address {
 }
 
 .accordion-button::after {
-  background-image: url("../images//icon/accrodin_plus.svg");
+  background-image: url("../images/icon/accrodin_plus.svg");
   background-size: 24px;
   width: 24px;
   height: 24px;
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("../images//icon/accrodin_plus.svg");
+  background-image: url("../images/icon/accrodin_minus.svg");
 }
 
 /* accordion list */

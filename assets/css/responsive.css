@@ -11,6 +11,49 @@
 
 }
 
+@media only screen and (max-width: 1024px) {
+  .font-56 {
+    font-size: 2.5rem;
+  }
+
+  .hero-wrapper {
+    padding-top: 150px;
+    height: 860px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+
+  h5 {
+    font-size: 16px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .accordion-button {
+    height: 54px;
+    font-size: 16px;
+  }
+
+  .faq-content .row {
+    row-gap: 24px;
+  }
+
+  .footer-bottom .row .col:first-child {
+    padding-right: 20px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .mobile-nav-toggler {
     display: block;
@@ -115,4 +158,88 @@
     display: none !important;
   }
 
+  .hero-wrapper {
+    height: fit-content;
+  }
+
+  .hero-content {
+    .row {
+      flex-direction: column;
+      gap: 24px;
+
+      .col-sm-6 {
+        width: 100%;
+      }
+    }
+  }
+
+  .offer-wrapper {
+    margin-top: 80px;
+  }
+
+  .offer-wrapper .offer-content {
+    box-shadow: none;
+    padding: 0;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  .category-content {
+    .row {
+      flex-direction: column;
+      gap: 24px;
+      margin: 0;
+
+      .col-sm-6 {
+        width: 100%;
+        padding: 0;
+
+      }
+    }
+  }
+
+  .employee-content {
+    .row {
+      flex-direction: column;
+      gap: 24px;
+      margin: 0;
+
+      .col-sm-6 {
+        width: 100%;
+        padding: 0;
+
+      }
+    }
+  }
+
+  .faq-content {
+    .row {
+      margin: 0;
+
+      .col-sm-6 {
+        width: 100%;
+        padding: 0;
+
+      }
+    }
+  }
+
+  .footerContainer {
+    margin-bottom: 96px;
+  }
+
+  .footer-bottom {
+    .row {
+      flex-direction: column;
+      gap: 34px;
+      text-align: center;
+    }
+
+    .social-icon {
+      justify-content: center !important;
+    }
+
+  }
 }
