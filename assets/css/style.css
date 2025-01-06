@@ -946,11 +946,79 @@ form.dashboard-filter .col-md-4 {
 
 .article-details {
   .row {
-    margin: 0 -12px;
+    margin: 0 -24px;
   }
 
   .col-8,
   .col-4 {
-    padding: 0 12px;
+    padding: 0 24px;
+  }
+}
+
+.lates-articles h5 {
+  border-bottom: 1px solid var(--bs-neutral-300);
+  padding-bottom: 14px;
+}
+
+.lates-articles ul li {
+  border-bottom: 1px solid var(--bs-neutral-300);
+  padding-bottom: 14px;
+
+}
+
+.lates-link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+  }
+
+  .content {
+    width: calc(100% - 100px);
+  }
+}
+
+.lates-articles .categories {
+  .item {
+    background: var(--bs-neutral-100);
+    border-radius: 8px;
+    padding: 12px 16px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: fit-content;
+
+    span {
+      background: var(--bs-white);
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+  }
+}
+
+.tags {
+  a {
+    background: var(--bs-neutral-100);
+    border-radius: 8px;
+    padding: 12px 16px;
+    width: fit-content;
+    color: var(--bs-primary-500);
+  }
+}
+
+.tagContent {
+  border: 1px solid var(--bs-neutral-300);
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+.share {
+  .social i {
+    font-size: 20px;
+    color: var(--bs-primary-500);
   }
 }
