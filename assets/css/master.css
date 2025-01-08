@@ -534,7 +534,7 @@ address {
 .btn-sm-ss {
   height: 24px;
   font-size: 0.75rem !important;
-  padding: 0 1rem !important;
+  padding: 0 8px !important;
 }
 
 /* primary or brand button */
@@ -1040,7 +1040,7 @@ address {
   background: var(--bs-white);
   box-shadow: none;
   box-shadow: none;
-  border-radius: 16px;
+  border-radius: 8px;
   position: relative;
 }
 
@@ -1437,7 +1437,9 @@ address {
 }
 
 .table-responsive .table thead tr th {
-  padding: 20px 14px;
+  padding: 20px 8px;
+  font-weight: 500 !important;
+
 }
 
 .table-responsive .table tbody {
@@ -1451,14 +1453,14 @@ address {
 }
 
 .table-responsive .table tbody tr td {
-  padding: 14px;
+  padding: 14px 8px;
 }
 
 .table-responsive .table tbody tr,
 .table-responsive .table thead tr {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 .table-responsive .table>:not(caption)>*>* {

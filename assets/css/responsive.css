@@ -11,6 +11,29 @@
 
 }
 
+@media only screen and (max-width: 1280px) {
+  .auth-wrapper .auth {
+    width: 100%;
+  }
+
+  .auth-content {
+    padding: 14px 24px 14px 0px;
+  }
+
+  .wallet {
+    .row {
+      margin: 0 -16px;
+
+      .col-8,
+      .col-4 {
+        padding: 0 16px;
+      }
+    }
+  }
+}
+
+
+
 @media only screen and (max-width: 1024px) {
   .font-56 {
     font-size: 2.5rem;
@@ -25,6 +48,9 @@
     font-size: 24px;
   }
 
+  h3 {
+    font-size: 20px;
+  }
 
   h5 {
     font-size: 16px;
@@ -52,9 +78,86 @@
   .footer-bottom .row .col:first-child {
     padding-right: 20px;
   }
+
+  .mt-120 {
+    margin-top: 80px;
+  }
+
+  .nav-menu.ps-5 {
+    padding: 0 !important;
+  }
+
+  .auth-wrapper .auth {
+    width: 580px;
+    margin: 0 auto;
+
+    .row {
+      .col-sm-6:first-child {
+        display: none;
+
+      }
+
+      .col-sm-6 {
+        width: 100%;
+      }
+    }
+  }
+
+  .auth-content {
+    padding: 24px;
+  }
+
+  .wallet-content .walletCard {
+    padding: 24px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .menuContainer {
+    gap: 24px !important;
+  }
+
+  .navbar-nav {
+    gap: 16px;
+  }
+
+  .dashboard .page-title.filter {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .job-details .row {
+    margin: 0;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  .job-details .row .col-8,
+  .job-details .row .col-4 {
+    padding: 0;
+    width: 100%;
+  }
+
+  .credintial-auth {
+    width: 100%;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
+  .container-fluid {
+    padding: 0 20px;
+  }
+
+  .profile.mobile {
+    display: block;
+  }
+
+  .profile.desktop {
+    display: none;
+
+  }
+
   .mobile-nav-toggler {
     display: block;
   }
@@ -180,6 +283,19 @@
   .offer-wrapper .offer-content {
     box-shadow: none;
     padding: 0;
+
+    .col-sm-6.ps-5 {
+      padding-left: 20px !important;
+    }
+
+    .col-sm-6 {
+      padding: 0 !important;
+
+      .sub-heading {
+        margin: 0;
+        width: 100%;
+      }
+    }
   }
 
   h4 {
@@ -241,5 +357,283 @@
       justify-content: center !important;
     }
 
+  }
+
+  .category-content .content {
+    padding-right: 0;
+  }
+
+  .movile-view-filter {
+    display: flex;
+  }
+
+  .dashboard-filter {
+    display: none !important;
+  }
+
+  .dashboard .page-title.filter {
+    flex-direction: row;
+  }
+
+  .movile-view-collapse {
+    display: block;
+  }
+
+  .job-lists .table-responsive {
+    display: none;
+  }
+
+  .mobile-view-table {
+    display: flex !important;
+  }
+
+  .footer-top {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .footer-top .sort-summary .summary {
+    border: 0;
+    padding-left: 0;
+  }
+
+  .job-question {
+    width: 100%;
+  }
+
+  .job-question .card {
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  .main-content {
+    margin-top: 170px;
+  }
+
+  .wallet {
+    form .row {
+      row-gap: 0;
+    }
+
+    .row {
+      margin: 0;
+      flex-direction: column;
+      row-gap: 24px;
+
+      .col-4,
+      .col-8 {
+        padding: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .transaction-history .table-responsive {
+    display: none;
+  }
+
+  .mobile-view-table .card {
+    border: 0;
+  }
+
+  .mobile-view-table {
+    .payment-method {
+      padding: 3px 8px;
+      background: var(--bs-primary-500);
+      color: var(--bs-white);
+      border-radius: 4px;
+    }
+  }
+
+}
+
+@media only screen and (max-width:640px) {
+  .auth-wrapper .auth {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .hero-content {
+    .content {
+      text-align: center;
+
+      h6 {
+        text-align: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .hero-content .getStart {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .btn {
+      width: fit-content;
+    }
+  }
+
+  .offer-wrapper .offer-content {
+    text-align: center;
+
+    .col-sm-6.ps-5 {
+      padding-left: 0 !important;
+      margin-top: 14px;
+    }
+  }
+
+  .category-content {
+    text-align: center;
+  }
+
+  .employee-content {
+    text-align: center;
+
+    .task {
+      text-align: start;
+    }
+
+  }
+
+  .container-fluid {
+    padding: 0 20px;
+  }
+
+  .font-56 {
+    font-size: 2rem;
+  }
+
+  .hero-content .sort-summary {
+    display: none !important;
+  }
+
+  .mt-120 {
+    margin-top: 60px;
+  }
+
+  .mini-navbar {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mini-navbar .content {
+    width: unset;
+    padding: 14px;
+    gap: 14px !important;
+  }
+
+  #collapseExample form {
+    .row {
+      margin: 0 -8px;
+    }
+
+    .col-sm-6 {
+      width: 50%;
+      padding: 0 8px;
+    }
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .auth-form form {
+    margin-top: 14px;
+  }
+
+  .auth-content {
+    padding: 14px;
+  }
+
+  .input-field.otp .form-control {
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .input-field.otp {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .credintial-auth {
+    padding: 14px;
+  }
+
+  .wallet-tab .btn-sm {
+    padding: 0 0.5rem !important;
+  }
+
+  .wallet-content .walletCard {
+    padding: 24px 14px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .brandlogo {
+    width: 116px;
+  }
+
+  .profileContainer {
+    gap: 16px !important;
+  }
+
+  .navbar-brand {
+    gap: 16px !important;
+
+  }
+
+  .summary-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .job-details .task-tab {
+    gap: 12px !important;
+    padding-bottom: 14px;
+    margin-top: 14px !important;
+  }
+
+  .btn-md {
+    height: 40px;
+    padding: 0 0.5rem !important;
+    font-size: 14px !important;
+  }
+
+  .input-field.otp {
+    gap: 10px !important;
+  }
+
+  .wallet-tab .card {
+    padding: 0;
+    background: transparent;
+  }
+
+  .paginationContainer {
+    align-items: center !important;
+    justify-content: center !important;
+
+    p {
+      display: none !important;
+    }
+  }
+
+  .selectDeposit_type {
+    .radio_type {
+      flex-direction: column;
+      gap: 10px !important;
+    }
   }
 }
