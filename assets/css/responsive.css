@@ -30,6 +30,17 @@
       }
     }
   }
+
+  .create-task {
+    .row {
+      margin: 0 -16px;
+
+      .col-4,
+      .col-8 {
+        padding: 0 16px;
+      }
+    }
+  }
 }
 
 
@@ -142,6 +153,36 @@
     width: 100%;
   }
 
+  .notification .icon {
+    width: 56px;
+    min-height: 56px;
+    max-height: fit-content;
+    position: relative;
+  }
+
+  .profileImgContainer .profile-upload {
+    width: 104px;
+    height: 104px;
+  }
+
+  .setting .tab-content .card {
+    padding: 24px 14px;
+  }
+
+  .modal .task-details div {
+    flex-direction: column;
+    align-items: flex-start !important;
+    font-size: 14px !important;
+
+    .btn {
+      font-size: 14px !important;
+
+    }
+  }
+
+  .modal .task-details .report-link {
+    flex-direction: row !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -433,9 +474,9 @@
     display: none;
   }
 
-  .mobile-view-table .card {
+  /* .mobile-view-table .card {
     border: 0;
-  }
+  } */
 
   .mobile-view-table {
     .payment-method {
@@ -446,11 +487,265 @@
     }
   }
 
+  .create-task {
+    .row {
+      margin: 0;
+      flex-direction: column-reverse;
+      gap: 24px;
+
+      .col-4,
+      .col-8 {
+        padding: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .task_tracking .tracking-steps {
+    flex-direction: row;
+  }
+
+  .streamline .step {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .streamline .step .step-icon {
+    min-width: 100%;
+    max-width: fit-content;
+    min-height: fit-content;
+    max-height: fit-content;
+  }
+
+  .streamline .step .step-icon::after {
+    width: 100%;
+    height: 1px;
+    left: 48px;
+    top: 14px;
+  }
+
+  .tracking_content .date-time {
+    display: none !important;
+  }
+
+  .tracking_content h6 {
+    font-size: 12px !important;
+  }
+
+  .streamline .step .tracking_content {
+    width: 100%;
+  }
+
+  .task_tracking .card {
+    padding: 0 !important;
+    border: 0;
+  }
+
+  .task-content .card {
+    padding: 0 !important;
+    border: 0;
+
+  }
+
+  .notification .icon {
+    width: 48px;
+    min-height: 48px;
+    max-height: fit-content;
+    position: relative;
+  }
+
+  .messages .table-responsive .table thead {
+    display: none;
+  }
+
+  .messages .table-responsive .table tbody {
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+  }
+
+  .messages .table-responsive {
+    border-radius: 0;
+  }
+
+  .messages .card {
+    border: 0;
+    border-radius: 0;
+  }
+
+  .messages .table-responsive .table tbody tr {
+    border: 1px solid var(--bs-neutral-300) !important;
+    flex-direction: column;
+    padding: 14px;
+    border-radius: 8px;
+    gap: 8px;
+  }
+
+  .messages .table-responsive .table tbody tr td {
+    padding: 0;
+  }
+
+  .messages .table-responsive .table tbody tr td:last-child {
+    display: none;
+  }
+
+  .messages .table-responsive .table tbody tr td:nth-child(2) {
+    display: none;
+
+  }
+
+  .messages .table-responsive .table tbody tr:nth-child(even) {
+    background: unset;
+    border: 1px solid var(--bs-neutral-300) !important;
+
+  }
+
+  .chatbox {
+    width: 100%;
+  }
+
+  .chatbox .card {
+    padding: 14px !important;
+  }
+
+  .msg-send {
+    width: 48px;
+
+  }
+
+  .profileImgContainer .profile-upload {
+    width: 74px;
+    height: 74px;
+  }
+
+  .setting .tab-content .card {
+    padding: 24px;
+  }
+
+  .profileImgContainer .uploadIcon {
+    bottom: 4px;
+    right: -10px;
+  }
+
+  .setting .profile-status {
+    .row {
+      margin: 0;
+      flex-direction: column;
+      row-gap: 14px;
+
+      .col-4,
+      .col-8 {
+        padding: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .chart {
+    .col-6 {
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  .chart {
+    .card {
+      text-align: center;
+    }
+
+    .col-6 {
+      .graphContainer img {
+        width: 220px !important;
+        height: 250px !important;
+      }
+    }
+  }
+
+  .freelancer-list .card {
+    border: 0;
+  }
+
+  .my-tasks {
+    .card {
+      display: none;
+    }
+  }
+
+  .my-task-submited {
+    display: none;
+  }
+
+  .submitedTaskCard .card {
+    width: calc(100% - 40px);
+  }
+
+  .finish-tasks {
+    display: none;
+  }
+
+  .finished-task {
+
+    .card.desktop {
+      border: 0;
+      padding: 0 !important;
+
+      .right-side {
+        display: none !important;
+      }
+    }
+  }
+
+  .article-details {
+    .row {
+      margin: 0;
+      flex-direction: column;
+      row-gap: 24px;
+
+      .col-4,
+      .col-8 {
+        padding: 0;
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width:640px) {
   .auth-wrapper .auth {
     width: 100%;
+  }
+
+  .proof {
+    gap: 0px;
+    flex-direction: column;
+  }
+
+  .proof-input {
+    width: 100%;
+  }
+
+  .proof-select {
+    width: 100%;
+  }
+
+  .setting .tab-content .card {
+    padding: 24px 14px;
+  }
+
+  .performance {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center !important;
+  }
+
+  .finished-task .tab-menus {
+    min-width: 100%;
+    max-width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    touch-action: auto;
   }
 }
 
@@ -579,6 +874,43 @@
   .wallet-content .walletCard {
     padding: 24px 14px;
   }
+
+  .create-task .form-check .form-check-label {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+
+  .target_zone,
+  .task-category {
+    gap: 12px !important;
+  }
+
+  .btn-md {
+    height: 40px;
+  }
+
+  .msg-send .btn-md {
+    width: 48px;
+    height: 48px;
+
+  }
+
+  .profileImgContainer .profile-upload {
+    width: 64px;
+    height: 64px;
+  }
+
+  .referal-link {
+    width: 100%;
+    margin: 0 auto;
+    padding: 14px;
+    background: var(--bs-neutral-100);
+    border-radius: 8px;
+  }
+
+  .rate-freelancer {
+    flex-wrap: wrap;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -635,5 +967,20 @@
       flex-direction: column;
       gap: 10px !important;
     }
+  }
+
+  .tracking_content h6 {
+    font-size: 10px !important;
+    /* text-align: center; */
+  }
+
+
+  .task_tracking .card {
+    padding: 0 !important;
+    border: 0;
+  }
+
+  .task_tracking .tracking-steps {
+    padding: 0;
   }
 }

@@ -179,7 +179,7 @@
             <div class="container-fluid">
 
                <!-- task details -->
-               <!-- <div class="page-title">
+               <div class="page-title">
                   <a href="mytasks.html" class="font-18 fw-600"><img src="../assets/images/icon/back_icon.svg" alt=""
                         class="w-auto h-auto">
                      Back</a>
@@ -301,7 +301,7 @@
                         </div>
                      </div>
                   </div>
-               </div> -->
+               </div>
                <!-- task details -->
 
                <!-- submited task -->
@@ -312,78 +312,136 @@
                   <button class="btn btn-primary btn-md" data-bs-toggle="modal"
                      data-bs-target="#task-satisfy-modal">Satisfied Task</button>
                </div>
-               <div class="card mt-3 p-3">
-                  <div class="table-responsive">
-                     <table class="table">
-                        <thead>
-                           <tr>
-                              <th style="width: 130px;">
-                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                       Select All
-                                    </label>
-                                 </div>
-                              </th>
-                              <th style="width: 160px;">Freelancer Name</th>
-                              <th style="width: 150px;">Country</th>
-                              <th style="width: 140px;">Status</th>
-                              <th style="width: 120px;">Action</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr class="cursor-pointer">
-                              <td style="width: 130px;">
-                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label d-none" for="flexCheckDefault">
-                                       Select All
-                                    </label>
-                                 </div>
-                              </td>
-                              <td style="width: 150px;">
-                                 <a href="#" class="text-primary">akashbasak121</a>
-                              </td>
-                              <td style="width: 150px;">
-                                 Banglaadesh
-                              </td>
-                              <td style="width: 140px;">
-                                 <div class="alert alert-success-50 alert-sm" role="alert">
-                                    Satisfied
-                                 </div>
-                              </td>
-                              <td style="width: 120px;"><a href="#" class="text-primary fw-500 font-14">
-                                    <img src="../assets/images/icon/view.svg" alt="" class="w-auto h-auto me-2"> View
-                                 </a></td>
-                           </tr>
-                           <tr class="cursor-pointer">
-                              <td style="width: 130px;">
-                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label d-none" for="flexCheckDefault">
-                                       Select All
-                                    </label>
-                                 </div>
-                              </td>
-                              <td style="width: 150px;">
-                                 <a href="#" class="text-primary">akashbasak121</a>
-                              </td>
-                              <td style="width: 150px;">
-                                 Banglaadesh
-                              </td>
-                              <td style="width: 140px;">
-                                 <div class="alert alert-warning-50 alert-sm" role="alert">
-                                    Pending
-                                 </div>
-                              </td>
-                              <td style="width: 120px;"><a href="#" class="text-primary fw-500 font-14">
-                                    <img src="../assets/images/icon/view.svg" alt="" class="w-auto h-auto me-2"> View
-                                 </a></td>
-                           </tr>
-                        </tbody>
-                     </table>
+               <div class="my-task-submited">
+                  <div class="card mt-3 p-3">
+                     <div class="table-responsive">
+                        <table class="table">
+                           <thead>
+                              <tr>
+                                 <th style="width: 130px;">
+                                    <div class="form-check">
+                                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                       <label class="form-check-label" for="flexCheckDefault">
+                                          Select All
+                                       </label>
+                                    </div>
+                                 </th>
+                                 <th style="width: 160px;">Freelancer Name</th>
+                                 <th style="width: 150px;">Country</th>
+                                 <th style="width: 140px;">Status</th>
+                                 <th style="width: 120px;">Action</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="cursor-pointer">
+                                 <td style="width: 130px;">
+                                    <div class="form-check">
+                                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                       <label class="form-check-label d-none" for="flexCheckDefault">
+                                          Select All
+                                       </label>
+                                    </div>
+                                 </td>
+                                 <td style="width: 150px;">
+                                    <a href="#" class="text-primary">akashbasak121</a>
+                                 </td>
+                                 <td style="width: 150px;">
+                                    Banglaadesh
+                                 </td>
+                                 <td style="width: 140px;">
+                                    <div class="alert alert-success-50 alert-sm" role="alert">
+                                       Satisfied
+                                    </div>
+                                 </td>
+                                 <td style="width: 120px;"><a href="#" class="text-primary fw-500 font-14">
+                                       <img src="../assets/images/icon/view.svg" alt="" class="w-auto h-auto me-2"> View
+                                    </a></td>
+                              </tr>
+                              <tr class="cursor-pointer">
+                                 <td style="width: 130px;">
+                                    <div class="form-check">
+                                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                       <label class="form-check-label d-none" for="flexCheckDefault">
+                                          Select All
+                                       </label>
+                                    </div>
+                                 </td>
+                                 <td style="width: 150px;">
+                                    <a href="#" class="text-primary">akashbasak121</a>
+                                 </td>
+                                 <td style="width: 150px;">
+                                    Banglaadesh
+                                 </td>
+                                 <td style="width: 140px;">
+                                    <div class="alert alert-warning-50 alert-sm" role="alert">
+                                       Pending
+                                    </div>
+                                 </td>
+                                 <td style="width: 120px;"><a href="#" class="text-primary fw-500 font-14">
+                                       <img src="../assets/images/icon/view.svg" alt="" class="w-auto h-auto me-2"> View
+                                    </a></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
                   </div>
                </div>
+
+               <!-- start mobile view code -->
+
+               <div class="mobile-view-table d-flex flex-column gap-3 mt-3">
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="selectAll">
+                     <label class="form-check-label" for="selectAll">
+                        Select All
+                     </label>
+                  </div>
+                  <div class="submitedTaskCard d-flex align-items-center gap-2">
+                     <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="cardId_1">
+                        <label class="form-check-label d-none" for="cardId_1">
+                           Select All
+                        </label>
+                     </div>
+                     <div class="card p-3">
+                        <div class="task-title">
+                           <a href="mytask-details.html" class="fw-600 text-primary text-decoration-underline">
+                              akashbasak121</a>
+                        </div>
+                        <div class="mt-2 d-flex justify-content-between">
+                           <div class="alert alert-warning-50 alert-sm" role="alert">
+                              Pending
+                           </div>
+                           <div class="">
+                              Bangladesh
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="submitedTaskCard d-flex align-items-center gap-2">
+                     <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="cardId_1">
+                        <label class="form-check-label d-none" for="cardId_1">
+                           Select All
+                        </label>
+                     </div>
+                     <div class="card p-3">
+                        <div class="task-title">
+                           <a href="mytask-details.html" class="fw-600 text-primary text-decoration-underline">
+                              akashbasak121</a>
+                        </div>
+                        <div class="mt-2 d-flex justify-content-between">
+                           <div class="alert alert-warning-50 alert-sm" role="alert">
+                              Pending
+                           </div>
+                           <div class="">
+                              Bangladesh
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end mobile view code -->
 
                <!-- submited task -->
 
@@ -465,19 +523,20 @@
                   <h5 class="text-center">Rate Work</h5>
                   <div class="card p-3 mt-3">
                      <h6>Task Details</h6>
-                     <div class="task-details mt-3 d-flex gap-3 justify-content-between">
-                        <div class="w-50">
+                     <div class="task-details mt-3 d-flex gap-2 flex-column">
+                        <div class="d-flex align-items-center justify-content-between">
                            <p>Job ID:
                               <span class="fw-600">123456789</span>
                            </p>
-                           <div class="d-flex gap-3 align-items-center">
+                           <p>Job Submitted: <span class="fw-600"> Oct 12, 2024 10:45 AM</span> </p>
+
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                           <div class="d-flex gap-3 align-items-center report-link">
                               <p>Freelancer: </p>
                               <span class="fw-600">Akashbasak599</span>
                               <button class="btn btn-link">Report</button>
                            </div>
-                        </div>
-                        <div class="w-50">
-                           <p>Job Submitted: <span class="fw-600"> Oct 12, 2024 10:45 AM</span> </p>
                            <p>Cost: <span>$0.078</span> </p>
                         </div>
                      </div>
