@@ -26,16 +26,16 @@
     });
 
     // Menu Toggle Btn for profilebtn
-    $(".profile").on("click", function () {
-      // Get the sidebar content and append it to menu-outer
-      var sidebarContent = $(".dashboard-wrapper .sidebarMenu").html();
-      $(".mobile-menu .mobile-menu-nav .menu-outer")
-        .empty()
-        .append(sidebarContent);
+    // $(".profile").on("click", function () {
+    //   // Get the sidebar content and append it to menu-outer
+    //   var sidebarContent = $(".dashboard-wrapper .sidebarMenu").html();
+    //   $(".mobile-menu .mobile-menu-nav .menu-outer")
+    //     .empty()
+    //     .append(sidebarContent);
 
-      // Show the mobile menu
-      $("body").addClass("mobile-menu-visible");
-    });
+    //   // Show the mobile menu
+    //   $("body").addClass("mobile-menu-visible");
+    // });
 
     // Close the mobile menu on backdrop or close button click
     $(".mobile-menu .menu-backdrop, .mobile-menu .close-btn").on(

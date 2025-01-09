@@ -911,6 +911,52 @@
   .rate-freelancer {
     flex-wrap: wrap;
   }
+
+  a {
+    font-size: 14px !important;
+    line-height: 18px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  h6 {
+    font-size: 13px;
+  }
+
+  .brandlogo {
+    width: 124px;
+  }
+
+  .walletCard .paymentMethod .card .card-body {
+    padding: 10px;
+  }
+
+  .walletCard .paymentMethod .card {
+    min-width: 78px;
+  }
+
+  .profile .profile-btn {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
