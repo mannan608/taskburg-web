@@ -1034,3 +1034,8 @@ form.dashboard-filter .col-md-4 {
 .mobile-view-table {
   display: none !important;
 }
+
+.footerContainer .social-media,
+.footerContainer .company {
+  padding-left: 48px;
+}
